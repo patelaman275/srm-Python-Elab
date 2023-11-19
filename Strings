@@ -1,1 +1,79 @@
 
+
+
+
+
+
+
+# Write a Python program to remove the alternate characters
+s=str (input(''))
+rmv=""
+l=len(s)
+for x in range(0,l):
+    if x%2 == 0:
+        rmv=rmv+s[x]
+print(rmv)
+
+
+
+
+
+
+
+
+
+# Write a program to display the string using LIST[A:B] 
+
+str=input()
+print(str[0:4])
+
+
+
+
+
+
+
+
+
+
+
+# Write a Python program to count the number of Upper-case 
+
+string =input('')
+count=0
+for i in string:
+      if(i.isupper()):
+            count=count+1
+print(count)
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+# Write a python program to display the string using List [a : b ]
+
+str=input()
+print(str[0])
+print(str[:])
+print(str[0:4])
+print(str[5:9])
+print(str[5:])
+print(str[-1])
+
+
+
+
+
+
+
+
+
+
