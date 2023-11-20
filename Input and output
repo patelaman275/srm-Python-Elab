@@ -424,7 +424,7 @@ def calculate_salary(working_hours, salary_per_day):
 working_hours = int(input())
 salary_per_day = float(input())
 result = calculate_salary(working_hours, salary_per_day)
-print("{:.2f}".format(result)
+print("{:.2f}".format(result))
 
 
 
