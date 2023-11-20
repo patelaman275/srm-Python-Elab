@@ -312,9 +312,9 @@ print(volume)
 
 
 pi = 3.142
-r = int(input(''))
-vol = (4/3)*pi*r*r*r
-print(str(vol))
+r = float(input(''))
+vol = (4/3)*pi*r**3
+print(vol)
 
 
 
