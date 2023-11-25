@@ -18,6 +18,77 @@ print()
 
 
 
+'''Mathematics teacher gave the home work to Pinocchio that addition of square matrices. Can you help him to find the answer for the problems? 
+
+Constraints
+
+2≤R≤3
+
+2≤C≤3.'''
+
+row = int(input())
+col = int(input())
+a1 = []
+a2 = []
+result = []
+for i in range(row):
+ a1.append([])
+ for j in range(col):
+     l = int(input())
+     a1[i].append(l)
+for i in range(row):
+ a2.append([])
+ for j in range(col):
+     l = int(input())
+     a2[i].append(l)
+for i in range(row):
+ result.append([])
+ for j in range(col):
+     result[i].append(a1[i][j] + a2[i][j])
+for i in range(row):
+ for j in range(col):
+     print(result[i][j], end=" ")
+ print()
+
+
+
+
+
+
+
+
+
+
+
+
+'''Mukesh and Salima was looking to buy Organic Apples in the nearest fruits shop.
+
+But Shop Owner mixed the Hybrid apples in that Apple box. 
+
+After sometimes Mukesh checking the box, he was confused among organic and hybrid apple. 
+
+He started to count the hybrid apples. '''
+
+n = int(input())
+apples = []
+for i in range(n): 
+    apple = int(input())       
+    apples.append(apple)
+hybrid = 0
+for i in range(len(apples)):
+    for j in range(i+1, len(apples)): 
+        if apples[i] ==apples[j]:   
+           hybrid += 1
+           break
+print(hybrid)
+
+
+
+
+
+
+
+
 
 
 
