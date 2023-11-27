@@ -281,6 +281,44 @@ print(sum_of_squares_difference(n))  #append
 
 
 
+LVL 3
+
+#THE DEPARTMENT OF POLICE IN YOUR  CITY
+#arr=arr.split(" ")
+#arr=input()
+#available=0
+# Input the number of events
+n = int(input())
+
+# Input the sequence of events as a list
+arr = list(map(int, input().split()))
+
+# Initialize available officers
+available = 0
+
+# Initialize count of untreated crimes
+untreated_crimes = 0
+
+# Iterate through the events
+for event in arr:
+    # If officers are recruited, add them to available officers
+    if event != -1:
+        available += event
+    # If a crime occurs and there are no available officers, increment untreated crimes
+    elif available == 0:
+        untreated_crimes += 1
+    # If there are available officers, assign one to investigate the crime
+    else:
+        available -= 1
+
+# Output the number of untreated crimes
+print(untreated_crimes
+
+
+
+
+
+
 
 
 
