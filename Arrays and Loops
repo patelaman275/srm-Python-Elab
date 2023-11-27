@@ -207,3 +207,89 @@ print(sum_of_multiples(N))
 
 
 
+lvl 2
+#palindrome
+
+def is_palindrome(number):
+    return str(number) == str(number)[::-1]
+
+def find_largest_palindrome(n):
+    largest_palindrome = 0
+    for i in range(100, n):
+        for j in range(100, n):
+            product = i * j
+            if is_palindrome(product) and product > largest_palindrome:
+                largest_palindrome = product
+    return largest_palindrome
+
+# Read input from STDIN
+n = int(input())
+
+# Find the largest palindrome made from the product of two 3-digit numbers
+result = find_largest_palindrome(n)
+
+# Print the result to STDOUT
+print(result)
+#str(p) == str(p)[::-1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#the sum of square of
+
+def sum_of_squares_difference(n):
+    # Initialize variables to store sum of squares and square of sum
+    sum_of_squares = 0
+    sum_val = 0
+
+    # Calculate sum of squares and sum of natural numbers
+    for i in range(1, n+1):
+        sum_of_squares += i**2
+        sum_val += i
+
+    # Square the sum of natural numbers
+    square_of_sum = sum_val**2
+
+    # Calculate the difference
+    difference = square_of_sum - sum_of_squares
+
+    return difference
+
+# Input the value of n
+n = int(input())
+
+# Calculate and print the difference
+print(sum_of_squares_difference(n))  #append
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
