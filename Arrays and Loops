@@ -173,8 +173,32 @@ for i in range(num_rows):
 
 
 
+#n! means
+n=int(input())
+s=1
+sol=0
+for i in range(1,n+1):
+ s=s*i
+for j in str(s):
+ sol+=int(j)
+print(sol)
 
 
+
+
+
+
+
+
+#ganapathy
+n = int(input())
+for i in range(1,n+1):
+ for j in range(1,i+1):
+ if(i%2==0):
+ print("Fail ",end="")
+ else:
+ print("Pass ",end="")
+ print("")
 
 
 
